@@ -21,10 +21,10 @@ public class CurrentPrice {
 	}
 	
 	@Data
-	class CurrentCurrency {
+	public class CurrentCurrency {
 		@SerializedName("code")
 		String code;
 		@SerializedName("rate_float")
-		String rateFloat;
+		float rateFloat;
 	}
 }

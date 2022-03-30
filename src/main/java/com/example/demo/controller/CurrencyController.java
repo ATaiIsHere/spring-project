@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.entity.Currency;
+import com.example.demo.model.CurrencyPrice;
 import com.example.demo.service.CurrencyServiceImpl;
 
 @RestController
@@ -38,7 +39,7 @@ public class CurrencyController {
 	}
     
     @GetMapping("/currencyPrice")
-	public Map<String, Object> getCurrencyPrice() {
+	public Object getCurrencyPrice() {
     	try {
     		return currencyService.getCurrencyPrice();    		
     	} catch(Exception e) {

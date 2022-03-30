@@ -5,11 +5,12 @@ import java.util.Map;
 import org.json.JSONObject;
 
 import com.example.demo.entity.Currency;
+import com.example.demo.model.CurrencyPrice;
 
 public interface CurrencyService {
 	public String getCurrentPrice() throws Exception;
 
-	public Map getCurrencyPrice() throws Exception;
+	public CurrencyPrice getCurrencyPrice() throws Exception;
 
 	public Currency getCurrency(String id);
 
