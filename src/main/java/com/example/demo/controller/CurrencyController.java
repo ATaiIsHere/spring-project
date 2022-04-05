@@ -41,7 +41,7 @@ public class CurrencyController {
     @GetMapping("/currencyPrice")
 	public Object getCurrencyPrice() {
     	try {
-    		return currencyService.getCurrencyPrice();    		
+    		return currencyService.getCurrencyPrice();
     	} catch(Exception e) {
     		e.printStackTrace();
     		

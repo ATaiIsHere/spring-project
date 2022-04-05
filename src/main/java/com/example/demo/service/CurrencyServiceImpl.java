@@ -84,7 +84,6 @@ public class CurrencyServiceImpl implements CurrencyService {
 
 	@Override
 	public Currency saveCurrency(Currency currency) {
-		System.out.println(currency.toString());
 		return currencyRepository.save(currency);
 	}
 
